@@ -1,0 +1,30 @@
+{
+  "Bosnian": [
+    {
+      "translator": "Besim Korkut",
+      "col_name": "korkut"
+    },
+    {
+      "translator": "Mustafa Mlivo",
+      "col_name": "mlivo"
+    }
+  ],
+  "English": [
+    {
+      "translator": "Yusuf Ali",
+      "col_name": "yusufali"
+    }
+  ],
+  "German": [
+    {
+      "translator": "Abu Rida",
+      "col_name": "aburida"
+    }
+  ],
+  "Arabic": [
+    {
+      "translator": "Jalaluddin Suyuti",
+      "col_name": "jalalayn"
+    }
+  ]
+}

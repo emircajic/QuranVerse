@@ -31,11 +31,21 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
- * Currently plugin version.
+ * Define path constants, so we can easily reference the files and directories.
+ *
+ * QVPATH: Plugin path - with trailing slash.
+ * QVURL: Plugin URL - without trailing slash.
+ */
+
+define('QVPATH',    plugin_dir_path(__FILE__));
+define('QVURL',     plugins_url('', __FILE__));
+
+/**
+ * Current plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'PLUGIN_NAME_VERSION', '1.0.0' );
+define( 'PLUGIN_NAME_VERSION', '0.1.1' );
 
 /**
  * The code that runs during plugin activation.
