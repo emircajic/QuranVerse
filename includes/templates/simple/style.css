@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Scheheraza";
+  src: url("Scheherazade.eot");
+  src: local("Scheherazade"), url("Scheherazade.ttf") format("truetype"); 
+}
+
+/* Quranic text */
+.quran-wrapper {
+  position: relative;
+  margin: 0 10% 26px 10%; 
+}
+
+.quran-arabic-text {
+  display: block;
+  direction: rtl;
+  font-family: Scheherazade, Scheheraza;
+  font-size: 1.75rem; 
+}
+
+.quran-aya-number {
+  display: inline;
+  margin-right: 3px; 
+}
+  .quran-aya-number:before {
+    content: "("; 
+  }
+  .quran-aya-number:after {
+    content: ") "; 
+  }
+
+.quran-translation-text {
+  display: inline; 
+}
+
+.quran-source-name {
+  display: block;
+  font-style: italic;
+  text-align: right;
+  margin: 0; 
+}

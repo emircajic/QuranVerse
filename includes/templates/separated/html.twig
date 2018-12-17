@@ -1,0 +1,19 @@
+{% set first_aya = ayat|first.aya %}
+{% set last_aya = ayat|last.aya %}
+<p class='quran-arabic'>
+	{% for aya in ayat %}
+	<span class='text'>{{aya.text}}</span>
+	<span class='aya-number'>{{aya.aya|arabic}}</span>
+	{% endfor %}
+</p>
+<p class='quran-translation'>
+	{% for aya in ayat %}
+	<span class='aya-number'>{{aya.aya}}</span>
+	<span class='text'>{{aya.translation}}</span>
+	{% endfor %}
+</p>
+<p class='quran-source-name'>{{sura.name_transliteration}}, {{first_aya}}
+{% if first_aya < last_aya %}
+ - {{last_aya}}
+{% endif %}
+</p>

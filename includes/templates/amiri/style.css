@@ -1,0 +1,59 @@
+/* Quranic text */
+
+@font-face {
+    font-family: AmiriQuranWeb;
+    font-style: normal;
+    font-weight: 400;
+    src: url('AmiriQuran.woff2') format('woff2'),
+         url('AmiriQuran.woff') format('woff');
+}
+
+@font-face {
+    font-family: AmiriQuranColoredWeb;
+    font-style: normal;
+    font-weight: 400;
+    src: url('AmiriQuranColored.woff2') format('woff2'),
+         url('AmiriQuranColored.woff') format('woff');
+}
+
+
+.quran-arabic{
+  font-family: AmiriQuranColoredWeb !important;
+  font-size: 20px !important; 
+  margin: auto 10%;
+  line-height: 200% !important;
+  text-align: right;
+  direction: rtl;
+
+}
+.quran-arabic .aya-number {
+	margin: 0 0.5em;
+	font-size: 14px;
+	direction: rtl;
+}
+.quran-arabic .aya-number:before{
+	content: "﴿";
+}
+
+.quran-arabic .aya-number:after {
+	content: "﴾";	
+}
+
+.quran-translation {
+	margin: auto 10%;
+	font-size: 14px;
+}
+.quran-translation .aya-number:before{
+	content: "(";
+}
+
+.quran-translation .aya-number:after {
+	content: ")";	
+}
+
+
+.quran-source-name {
+	text-align: right;
+	font-style: italic;
+	
+}

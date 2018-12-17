@@ -1,0 +1,47 @@
+/* Quranic text */
+
+@font-face {
+    font-family: 'me_quranR3HOQ';
+    src: url('me_quranR3HOQ.ttf') format('truetype');
+}
+
+.quran-arabic{
+  font-family: me_quranR3HOQ;
+  font-size: 14px !important; 
+  margin: auto 10%;
+  line-height: 200% !important;
+  text-align: right;
+  direction: rtl;
+
+}
+.quran-arabic .aya-number {
+	margin: 0 0.5em;
+	font-size: 14px;
+	direction: rtl;
+}
+.quran-arabic .aya-number:before{
+	content: "﴿";
+}
+
+.quran-arabic .aya-number:after {
+	content: "﴾";	
+}
+
+.quran-translation {
+	margin: auto 10%;
+	font-size: 14px;
+}
+.quran-translation .aya-number:before{
+	content: "(";
+}
+
+.quran-translation .aya-number:after {
+	content: ")";	
+}
+
+
+.quran-source-name {
+	text-align: right;
+	font-style: italic;
+	
+}
